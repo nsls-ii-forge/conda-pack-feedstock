@@ -5,7 +5,7 @@ Home: https://conda.github.io/conda-pack
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Package conda environments for redistribution
 

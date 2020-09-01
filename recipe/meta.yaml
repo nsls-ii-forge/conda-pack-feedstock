@@ -1,6 +1,6 @@
 {% set name = "conda-pack" %}
-{% set version = "0.4.0" %}
-{% set sha256 = "70bf587cacfabd93d2ec4f3eda3e50e2661e7f92e994879ca1e2d61a8f9a225f" %}
+{% set version = "0.5.0" %}
+{% set sha256 = "9da49f1aa1b1472bf859ca7f25f69f4f89a4c0d0ba0adef39f33f240b68990cf" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - conda-pack = conda_pack.cli:main
 
